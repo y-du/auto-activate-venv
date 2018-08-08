@@ -14,7 +14,6 @@ function cd {
                 venv_path=$envs_dir/$venv
                 if [ "$VIRTUAL_ENV" != "$venv_path" ]; then
                     venv_name=$(basename $venv_path)
-                    clear
                     echo -e "${l_blue}activating '$venv_name' venv ...${white}"
                     source $venv_path/bin/activate
                 fi
@@ -22,5 +21,3 @@ function cd {
         fi
     fi
 }
-
-#export PROMPT_COMMAND="_auto_activate_venv; $PROMPT_COMMAND"
