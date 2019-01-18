@@ -48,5 +48,5 @@ function cd {
     fi
 }
 
-export VIRTUAL_ENV_DISABLE_PROMPT=1
-export PS1="\$(venv_prompt)$PS1"
+#export VIRTUAL_ENV_DISABLE_PROMPT=1
+#export PS1="\$(venv_prompt)$PS1"
